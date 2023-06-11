@@ -1,0 +1,79 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.home::before{
+    content: "";
+    background-image: url(https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXN0YXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+    position: absolute;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+   
+}
+.home nav ul{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #27374D;
+    gap: 10px;
+
+}
+.home nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+.home nav ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.home nav ul li a:hover{
+    background-color: white;
+    color: green;
+    list-style: none;
+    text-decoration: none;
+}
+.title
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(green,cadetblue);
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: backcolor 5s linear infinite alternate;
+    background-position: -750px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+@keyframes backcolor
+{
+    100%{
+        background-position: 0 0;
+    }
+}
+#h1{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+}

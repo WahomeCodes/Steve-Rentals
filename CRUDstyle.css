@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body::before{
+    content: "";
+    background-image: url(https://images.unsplash.com/flagged/photo-1564767609424-270b9df918e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2V5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .3;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+}
+form{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid slategray;
+    border-radius: 10px;
+    width: fit-content;
+    position: relative;
+}
+h2{
+   text-align: center;
+}
+input,button{
+    width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    margin: 5px;
+}
+button{
+    align-self: center;
+    color:white;
+    font-weight: bold;
+    background-color: #27374D;
+}
+input::placeholder{
+    color: red;
+    font-weight: bold;
+}
+input{
+    font-weight: bold;
+    color: #27374D;
+}
+.error{
+    color: red;
+}
+.message{
+    color: green;
+}
+table,h1,h2{
+    position: relative;
+}
+table{
+    background-color: #27374D;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}

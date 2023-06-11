@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="div">
+        <form action="addhouses.php" method="post"><i class="fa-solid fa-square-plus"></i><button type="submit">Add a house</button></form>
+        <form action="updatehouse.html" method="post"><i class="fa-solid fa-gear"></i><button type="submit">Update a house</button></form>
+        <form action="deletehouse.php" method="post"><i class="fa-solid fa-house-lock"></i><button type="submit">Delete a house</button></form>
+        <form action="viewhouses.php" method="post"><i class="fa-solid fa-eye"></i><button type="submit">View Your houses</button></form>
+    </div>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 30px;
+            padding: 50px;
+            position: relative;
+        }
+        div form{
+            width: fit-content;
+        }
+        div form button{
+            width: 500px;
+            padding: 100px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:  #27374D;
+            color: white;
+            font-weight: bold;
+        }
+        div form i{
+            position: relative;
+            top: 20px;
+            float: right;
+            right: 50px;
+            color: white;
+            font-size: 20px;
+        }
+        body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+body::before{
+    content: "";
+    background-image: url(https://images.unsplash.com/photo-1490197415175-074fd86b1fcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+}
+    </style>
+</body>
+</html>
